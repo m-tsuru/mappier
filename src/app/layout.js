@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 
-import { Header } from "../components/Basic/Header";
+import { Header } from "../components/Header";
 
 import "./globals.css";
 
@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="ja">
       <body className={inter.className}>
         <Header />
-        <div className="m-2">{children}</div>
+        <div>{children}</div>
       </body>
     </html>
   );

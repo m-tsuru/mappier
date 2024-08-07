@@ -3,7 +3,9 @@ import Link from "next/link";
 export function Header() {
   return (
     <nav className="flex bg-gray-800 text-white p-6 justify-between z-50">
-      <h1 className="text-2xl font-bold">Mappier</h1>
+      <h1 className="text-2xl font-bold">
+        <Link href="/">Mappier</Link>
+      </h1>
       <Link
         href={`/auth`}
         className="hover:bg-blue-400 group flex items-center rounded-md bg-green-500 text-white text-sm font-medium pl-2 pr-3 py-2 shadow-sm"
